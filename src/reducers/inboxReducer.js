@@ -1,14 +1,16 @@
 import createReducer from "../utils/createReducer";
+import inboxAcTypes from "../actionTypes/inboxAcTypes";
 const initState = {
     name:'inboxPage',
     index:1
 }
 
 export default createReducer(initState,{
-    CHANGE_INDEX(state,action){
+    [inboxAcTypes.ADD_INBOX_INDEX](state,action){
+        console.log(0)
         return {
             ...initState,
-            index:state.index++
+            index:++state.index
         }
     }
 })

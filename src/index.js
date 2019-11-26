@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {Provider} from "react-redux";
-import {createStore} from "redux";
+import {createStore,applyMiddleware} from "redux";
 import rootReducers from './reducers/index'
+import thunk from 'redux-thunk'
 
 // import antd
 import 'antd/dist/antd.css'
 
-const store = createStore(rootReducers)
+const store = createStore(rootReducers,applyMiddleware(thunk))
 
 ReactDOM.render(<Provider store = {store}><App/></Provider>, document.getElementById('root'));
 

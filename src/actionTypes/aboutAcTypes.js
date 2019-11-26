@@ -1,3 +1,3 @@
 export default {
-    ADD_INDEX:'ADD_INDEX'
+    ADD_ABOUT_INDEX:'ADD_ABOUT_INDEX'
 }

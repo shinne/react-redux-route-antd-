@@ -7,8 +7,7 @@ const initState = {
 }
 
 export default createReducer(initState,{
-    [types.ADD_INDEX](state,action){
-        console.log('xxxxx')
+    [types.ADD_ABOUT_INDEX](state,action){
         return {
             ...initState,
             index:++state.index
