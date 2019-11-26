@@ -11,7 +11,6 @@ class About extends React.Component {
     }
 
     addIndex() {
-        console.log('sss')
         this.props.dispatch(actions.addPageIndex())
     }
 
@@ -23,7 +22,7 @@ class About extends React.Component {
                 <ul>
                     <li><h3>name:{name},index:{index},<span onClick={() => {
                         this.addIndex()
-                    }}>ADD INDEX</span></h3></li>
+                    }}>CLICK ME TO ADD INDEX</span></h3></li>
                     <li><Link to="/about/about2">About2 click</Link></li>
                     <li><Link to="/about/about3" inbox>About3 click</Link></li>
                 </ul>

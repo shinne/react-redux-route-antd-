@@ -49,7 +49,6 @@ export default class ListDemo extends React.Component {
     };
 
     fetch = (params = {}) => {
-        console.log('params:', params);
         this.setState({ loading: true });
         reqwest({
             url: 'https://randomuser.me/api',

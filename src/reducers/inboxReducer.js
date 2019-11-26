@@ -7,7 +7,6 @@ const initState = {
 
 export default createReducer(initState,{
     [inboxAcTypes.ADD_INBOX_INDEX](state,action){
-        console.log(0)
         return {
             ...initState,
             index:++state.index
